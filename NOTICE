@@ -1,0 +1,4 @@
+Figloom includes scientific rendering and presentation components extracted
+from FOREST (https://github.com/mikamikasuki/FOREST), licensed under Apache 2.0.
+The extracted components have been adapted for an independent Python package
+and local workspace service. The original license is included in LICENSE.

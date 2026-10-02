@@ -1,0 +1,9 @@
+Scientific visualization components preserve the original Apache License 2.0 source attribution to mikamikasuki. The project root includes the applicable license.
+Modifications include standalone data mapping, editable revision snapshots, package namespaces and local artifact exports.
+
+Runtime components used by this renderer:
+NumPy, pandas, SciPy, HTTPX, pypdf: BSD-style licenses.
+Matplotlib: Matplotlib license (PSF-based).
+Pillow: Historical Permission Notice and Disclaimer (HPND).
+
+The bibliography JSON records official scholarly sources and page references. It contains no third-party implementation source.

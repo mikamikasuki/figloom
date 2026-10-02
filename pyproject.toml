@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "figloom"
+version = "0.1.0"
+description = "An editable scientific figure and table workspace"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+dependencies = [
+  "fastapi>=0.115", "uvicorn>=0.30", "python-multipart>=0.0.20",
+  "httpx>=0.27", "numpy>=1.26", "pandas>=2.2", "scipy>=1.13",
+  "matplotlib>=3.9", "Pillow>=10.4", "pypdf>=5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "build>=1.2"]
+
+[project.scripts]
+figloom = "figloom.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"figloom" = ["web/**/*"]
+"figloom.scientific" = ["*.json", "*.txt"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
